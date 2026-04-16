@@ -91,51 +91,8 @@ Operations that assign values to variables (e.g., =, +=, -=, *=, /=).
 A shorthand for conditional statements that returns one of two values based on a condition (e.g., condition ? value1 : value2).
 
 
-// 2. 🔁 Control Flow
-// Conditional Statements
-// if / else
-// switch
-// Loops
-// for
-// while
-// do-while
-// for...in
-// for...of
-// Control Statements
-// break
-// continue
-// return
-// throw
 
-// 3. 🧩 Functions
-// Function Declaration
-// Function Expression
-// Arrow Functions
-// Parameters
-// Default parameters
-// Rest parameters
-// Arguments object
-// Return values
-// Higher-Order Functions
-// Callback Functions
-// Pure vs Impure Functions
-// Recursion
-// Tail recursion
-// Closures
-// IIFE (Immediately Invoked Function Expression)
 
-// 4. 🧱 Data Structures (Core Language Level)
-// Arrays
-// Indexing
-// Iteration
-// Sparse arrays
-// Strings
-// Objects
-// Key-value pairs
-// Property descriptors
-// Maps
-// Sets
-// WeakMap / WeakSet
 
 // 5. 🛠 Built-in Methods & Functional Programming
 // Array Methods
@@ -166,37 +123,6 @@ A shorthand for conditional statements that returns one of two values based on a
 // Garbage Collection
 // Stack vs Heap memory
 
-// 7. ⚡ Asynchronous Programming
-// Synchronous vs Asynchronous
-// Callbacks
-// Promises
-// States (pending, fulfilled, rejected)
-// Promise chaining
-// async / await
-// Event Loop
-// Microtasks
-// Macrotasks
-// Timers
-// setTimeout
-// setInterval
-// Error Handling
-// try/catch
-// finally
-
-// 8. 🧬 Advanced JavaScript Concepts
-// this keyword
-// bind / call / apply
-// Prototypes
-// Prototype chain
-// Inheritance (JS style)
-// ES6 Classes
-// Modules
-// CommonJS
-// ES Modules
-// Iterators & Generators
-// Symbols
-// Reflect API
-// Proxy API
 
 // 9. 🔷 TypeScript (Type System Mastery)
 // Basic Types

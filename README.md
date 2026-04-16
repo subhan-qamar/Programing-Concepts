@@ -230,17 +230,6 @@ Each topic is explained in a **simple, concise way** with:
 
 > Help developers go from **confused → confident → interview ready 🚀**
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-You can:
-
-* Improve explanations
-* Add better examples
-* Add new exercises
 
 ---
 
@@ -259,8 +248,3 @@ If you find this helpful:
 
 ---
 
-If you want, I can also:
-
-* Structure folder + file naming for you
-* Add sample content for 2–3 topics
-* Or turn this into a **portfolio-level GitHub project (very impressive for hiring)**

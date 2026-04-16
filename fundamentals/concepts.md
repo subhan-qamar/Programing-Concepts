@@ -1,49 +1,93 @@
 **##🧠 COMPLETE PROGRAMMING CONCEPT INDEX##**
 
 **🟢 Fundamentals of Programming**
+
 **Syntax**
+
 The rules that define how to write the code. Basically the grammar of the language.
+
 **Semantics**
+
 Meaning of the code. What the code actually does when executed.
+
 **Keywords & Identifiers**
+
 Keywords are reserved words that have special meaning in the language (e.g., if, else, function).
+
 **Variables**
+
 Containers for storing data values.
+
 **Declaration**
+
 The act of defining a variable with a specific name and type (if applicable).
+
 **Initialization**
+
 The process of assigning an initial value to a variable.
+
 **Scope (block, function, global)**
+
 The context in which a variable is accessible.
+
 **Hoisting (JS-specific)**
+
 The behavior of moving variable and function declarations to the top of their containing scope during compilation in JavaScript.
+
 **Data Types**
+
 The classification of data based on the type of value it holds.
+
 **Primitive**
+
 Basic data types that are immutable and stored directly in memory (e.g., string, number, boolean).
+
 **Non-Primitive (Reference)**
+
 Complex data types that are mutable and stored as references (e.g., objects, arrays).
+
 **Type Systems**
+
 The rules and mechanisms that define how types are used and enforced in a programming language.
+
 **Static vs Dynamic**
+
 Static typing means types are checked at compile-time, while dynamic typing means types are checked at runtime.
+
 **Strong vs Weak typing**
+
 Strong typing means types are strictly enforced, while weak typing allows more flexibility and implicit type conversions.
+
 **Type Inference**
+
 The ability of the compiler to automatically deduce the type of a variable based on its value.
+
 **Operators**
+
 +, -, *, /, %, etc. Symbols that perform operations on operands.
+
 **Arithmetic**
+
 Operations that perform mathematical calculations on numeric values (e.g., addition, subtraction, multiplication, division, modulus).
+
 **Comparison**
+
 Operations that compare two values and return a boolean result (e.g., ==, ===, !=, !==, >, <, >=, <=).
+
 **Logical**
+
 Operations that combine boolean values and return a boolean result (e.g., &&, ||, !).
+
 **Bitwise**
+
 Operations that perform bit-level manipulation on integer values (e.g., &, |, ^, ~, <<, >>).
+
 **Assignment**
+
 Operations that assign values to variables (e.g., =, +=, -=, *=, /=).
+
 **Ternary**
+
 A shorthand for conditional statements that returns one of two values based on a condition (e.g., condition ? value1 : value2).
 
 

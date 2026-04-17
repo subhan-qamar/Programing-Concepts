@@ -56,8 +56,8 @@ class TaskManager{
     }
     task.toggleComplete();
 }
-    public fetchTaskFromServer(){
-        const mockData =  new Promise((resolve,reject)=>{
+    public fetchTaskFromServer(): Promise<TASK[]> {
+        const mockData =  new Promise<TASK[]>((resolve,reject)=>{
             if(this.tasks.length > 0){
                 setTimeout(() => {
                     resolve(this.tasks.map(task => task.data));
@@ -66,7 +66,8 @@ class TaskManager{
             else {
                 resolve([]);
             }
-        })
+        });
+        return mockData;
     }
 
 }
@@ -96,3 +97,6 @@ catch(e){
         throw e;
     }
 }
+manager.fetchTaskFromServer()
+.then(result=> console.log(result))
+.catch(error => console.error(error));

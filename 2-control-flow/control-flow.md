@@ -1,71 +1,222 @@
-**2. 🔁 Control Flow**
+# 🔁 Control Flow (JavaScript)
 
-**Conditional Statements**
+Control flow determines how your program executes based on conditions, loops, and statements.
 
-if / else
+---
 
-if(true) {
-  <!-- // code -->
-} else if (condition) {
-  <!-- // code -->
+## 🔀 Conditional Statements
+
+### 📌 `if / else`
+
+Executes code based on a condition.
+
+```js id="v1r8bx"
+let age = 18;
+
+if (age >= 18) {
+  console.log("Adult");
 } else {
-  <!-- // code -->
+  console.log("Minor");
 }
+```
 
-switch
+### 📌 `else if`
 
-Switch is a control statement that allows you to execute different code blocks based on the value(Type Strict) of an expression.
-switch (expression) {
-  case value1:
-    // code
+Handle multiple conditions.
+
+```js id="o4z3mr"
+let score = 75;
+
+if (score >= 90) {
+  console.log("A");
+} else if (score >= 70) {
+  console.log("B");
+} else {
+  console.log("C");
+}
+```
+
+---
+
+### 🔄 `switch`
+
+Used for multiple specific cases.
+
+```js id="g5k7pz"
+let day = 2;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
     break;
-  case value2:
-    // code
+  case 2:
+    console.log("Tuesday");
     break;
   default:
-    // code
+    console.log("Other day");
 }
+```
 
-**Loops**
+⚠️ Always use `break` to prevent fall-through.
 
-<!-- for -->
+---
+
+## 🔁 Loops
+
+### 📌 `for`
+
+Best when iteration count is known.
+
+```js id="r9y1hf"
 for (let i = 0; i < 5; i++) {
-  <!-- // code -->
+  console.log(i);
 }
-<!-- // while -->
-while (condition) {
-  <!-- // code -->
+```
+
+---
+
+### 📌 `while`
+
+Runs while condition is true.
+
+```js id="1apx5m"
+let i = 0;
+
+while (i < 5) {
+  console.log(i);
+  i++;
 }
-<!-- // do-while -->
+```
+
+---
+
+### 📌 `do...while`
+
+Runs at least once.
+
+```js id="c5gk3w"
+let i = 0;
+
 do {
-  <!-- // code -->
-} while (condition);
-<!-- // for...in -->
-for(val in object) {
-  <!-- // code -->
-}
-<!-- // for...of -->
-for (val of iterable) {
-  <!-- // code -->
-}
-**Control Statements**
+  console.log(i);
+  i++;
+} while (i < 5);
+```
 
-<!-- // break -->
-for (let i = 0; i < 5; i++) {
-  if (i === 3) break; // exits the loop when i is 3
+---
+
+### 📌 `for...in`
+
+Iterates over object keys.
+
+```js id="q2p9lb"
+let obj = { name: "Ali", age: 22 };
+
+for (let key in obj) {
+  console.log(key, obj[key]);
 }
-// continue
-for (let i = 0; i < 5; i++) {
-  if (i === 3) continue; // skip the current iteration of a loop and move immediately to the next one
-  <!-- // code -->
+```
+
+⚠️ Not recommended for arrays
+
+---
+
+### 📌 `for...of`
+
+Iterates over iterable values (arrays, strings, etc.)
+
+```js id="8m3nqd"
+let arr = [1, 2, 3];
+
+for (let value of arr) {
+  console.log(value);
 }
-// return
-for (let i = 0; i < 5; i++) {
-  if (i === 3) return; // exits the function when i is 3
-  <!-- // code -->
+```
+
+---
+
+## ⛔ Control Statements
+
+### 🔹 `break`
+
+Stops loop or switch.
+
+```js id="8pkj2x"
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break;
+  console.log(i);
 }
-// throw
+```
+
+---
+
+### 🔹 `continue`
+
+Skips current iteration.
+
+```js id="q9r5te"
 for (let i = 0; i < 5; i++) {
-  if (i === 3) throw new Error("An error occurred"); // throws an error when i is 3
-  <!-- // code -->
+  if (i === 2) continue;
+  console.log(i);
 }
+```
+
+---
+
+### 🔹 `return`
+
+Exits a function and returns a value.
+
+```js id="b2y4hj"
+function check(num) {
+  if (num < 0) return "Negative";
+  return "Positive";
+}
+```
+
+---
+
+### 🔹 `throw`
+
+Used to create custom errors.
+
+```js id="d8k1az"
+function withdraw(amount) {
+  if (amount > 1000) {
+    throw new Error("Limit exceeded");
+  }
+}
+```
+
+---
+
+## 🧾 Summary Table
+
+| Concept    | Purpose               |
+| ---------- | --------------------- |
+| if / else  | Conditional branching |
+| switch     | Multi-case conditions |
+| for        | Fixed loops           |
+| while      | Condition-based loops |
+| do...while | Run at least once     |
+| for...in   | Object keys           |
+| for...of   | Iterable values       |
+| break      | Stop execution        |
+| continue   | Skip iteration        |
+| return     | Exit function         |
+| throw      | Raise errors          |
+
+---
+
+## 🚀 When to Use
+
+* **if / else** → general conditions
+* **switch** → fixed value comparisons
+* **for** → known iterations
+* **while** → unknown iterations
+* **for...of** → arrays/strings
+* **for...in** → objects
+* **break/continue** → control loop flow
+* **throw** → error handling
+
+---
